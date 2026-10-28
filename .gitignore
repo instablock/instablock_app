@@ -1,0 +1,17 @@
+# Build output
+.gradle/
+.kotlin/
+build/
+dist/
+
+# Local machine and IDE
+local.properties
+.idea/
+*.iml
+
+# Release signing key and its passwords: never commit, keep a backup
+.signing/
+
+# Screen captures from a phone: they show a real Instagram account
+captures/
+dumps/

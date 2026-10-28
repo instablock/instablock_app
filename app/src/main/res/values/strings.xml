@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">InstaBlock</string>
+    <string name="a11y_description">Opens Instagram and blocks the accounts in your list by tapping through the app the way you would. It reads Instagram\'s screen to find the buttons.</string>
+</resources>

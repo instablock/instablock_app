@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Accessibility service settings.
+    - typeAllMask: Android refreshes the service's cached copy of the screen only from the
+      events it receives. With fewer event types, the app would keep seeing stale views.
+    - flagReportViewIds: gives access to Instagram's view ids, the most reliable way to find views.
+    - flagRetrieveInteractiveWindows: popup menus open in a window of their own.
+    - canTakeScreenshot: screenshots for troubleshooting captures (Android 11+).
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagReportViewIds|flagRetrieveInteractiveWindows|flagIncludeNotImportantViews"
+    android:canPerformGestures="true"
+    android:canRetrieveWindowContent="true"
+    android:canTakeScreenshot="true"
+    android:description="@string/a11y_description"
+    android:notificationTimeout="50" />

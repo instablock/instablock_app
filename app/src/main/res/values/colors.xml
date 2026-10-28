@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark graphite theme -->
+    <color name="bg">#1B1C1F</color>
+    <color name="surface">#24262A</color>
+    <color name="line">#33353A</color>
+    <color name="text">#ECEDEF</color>
+    <color name="text_secondary">#9A9DA4</color>
+    <color name="text_log">#C4C6CB</color>
+    <!-- Primary button: light on the dark background -->
+    <color name="accent">#ECEDEF</color>
+    <color name="on_accent">#1B1C1F</color>
+</resources>
