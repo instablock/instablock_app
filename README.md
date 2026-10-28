@@ -2,6 +2,8 @@
 
 InstaBlock est une application Android (et Android uniquement) pour bloquer tous les comptes d'extrême droite en France.
 
+*Le guide d'installation est juste en dessous !*
+
 Basée sur le mouvement [On bloque l'extrême droite](https://www.onbloquelextremedroite.fr/), elle recense les comptes de partis, d'élus, de médias, de militants et d'influenceurs d'extrême droite actifs sur Instagram. Ils proviennent de :
 - la liste [trace-archive.fr/onbloque](https://trace-archive.fr/onbloque) ;
 - les comptes suggérés par [onbloquelextremedroite.fr](https://www.onbloquelextremedroite.fr/) et son dépôt [juliencoquet/onbloquelextremedroite](https://github.com/juliencoquet/onbloquelextremedroite) ;
@@ -69,7 +71,7 @@ Si le blocage est interrompu, touchez simplement **Démarrer** plus tard : Insta
 
 ## Infos
 
-**La limite d'Instagram.** Instagram limite le nombre d'actions qu'un compte peut faire en peu de temps, sans publier de chiffres. S'il juge que vous bloquez trop de comptes d'un coup, il affiche « Réessayez plus tard ». InstaBlock s'arrête alors de lui-même. Ce n'est pas grave : attendez quelques heures, voire un jour, puis touchez **Démarrer** pour continuer là où vous en étiez. Bloquer toute la liste peut donc prendre plusieurs sessions.
+**La limite d'Instagram.** Instagram limite le nombre d'actions qu'un compte peut faire en peu de temps, sans publier de chiffres. S'il juge que vous bloquez trop de comptes d'un coup, il affiche "Réessayez plus tard". InstaBlock s'arrête alors de lui-même. Ce n'est pas grave : attendez quelques heures, voire un jour, puis refaites **Démarrer** pour continuer là où vous en étiez.
 
 **Votre compte.** InstaBlock n'est pas un bot qui se connecte à votre place : il ne demande pas votre mot de passe et passe par l'application Instagram de votre téléphone, en touchant les mêmes boutons que vous, au rythme d'une personne. Bloquer des comptes est une action normale sur Instagram, et le risque pour votre compte est donc faible. Au pire, Instagram limite temporairement les blocages, comme expliqué ci-dessus.
 
