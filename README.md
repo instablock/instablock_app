@@ -27,7 +27,7 @@ Oui, l'IA a été utilisée pour construire cette application. MAIS je suis auss
 
 ## Installation
 
-Ce guide est fait pour tout le monde, sans aucune connaissance technique. Comptez 5 minutes.
+Ce guide est fait pour tout le monde, sans aucune connaissance technique. Comptez 5 minutes. **Lisez le jusqu'au bout !** Votre téléphone va probablement raler à un moment et ne pas vouloir l'installer, mais c'est facilement faisable, tout est décrit.
 
 ### 1. Autoriser l'installation
 
@@ -53,12 +53,14 @@ Pensez à le réactiver une fois InstaBlock installé (étape 3).
 3. Faites **Installer**.
 4. Retournez dans le Play Store -> photo de profil -> Play Protect -> roue dentée, et réactivez **Analyser les applis avec Play Protect**.
 
-### 4. Donner l'autorisation
+### 4. Autoriser les paramètres
 
-InstaBlock a besoin d'une autorisation spéciale, le "service d'accessibilité", pour toucher les boutons d'Instagram à votre place.
+Ouvrez **Paramètres** -> **Applications** -> **InstaBlock**, puis dans le menu "trois petits points" en haut à droite, sélectionner **Autoriser les paramètres restreints**.
 
-1. Ouvrez **InstaBlock**.
-2. Touchez le **?** en haut à droite et suivez le guide. Il explique aussi quoi faire si le bouton est grisé.
+Cela va vous permettre de donner accès à InstaBlock au "service d'accessibilité", qui est nécessaire pour toucher les boutons d'Instagram à votre place. Pour donner ces paramètres, il faut ensuite :
+
+1. Ouvrir **InstaBlock**.
+2. Appuyer sur le **?** en haut à droite et suivre le guide.
 
 ### 5. Lancer
 
