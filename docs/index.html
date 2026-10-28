@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InstaBlock</title>
+<meta name="description" content="Une application Android gratuite et open source qui bloque plus de 600 comptes d'extrême droite sur Instagram.">
+<meta property="og:title" content="InstaBlock">
+<meta property="og:description" content="Une application Android gratuite et open source qui bloque plus de 600 comptes d'extrême droite sur Instagram.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1B1C1F">
+<style>
+  /* Same colours as the app (app/src/main/res/values/colors.xml). */
+  :root {
+    --bg: #1B1C1F;
+    --line: #33353A;
+    --text: #ECEDEF;
+    --muted: #9A9DA4;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  main {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 56px 16px 64px;
+  }
+
+  a { color: var(--text); text-underline-offset: 3px; }
+
+  h1, h2, .button, footer {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  h1 {
+    margin: 0 0 16px;
+    font-size: 34px;
+  }
+
+  h2 {
+    margin: 48px 0 12px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 22px;
+  }
+
+  p, li { margin: 0 0 12px; }
+
+  ol { padding-left: 24px; margin: 0 0 12px; }
+
+  ol ol { margin-top: 8px; }
+
+  .lead { font-size: 20px; }
+
+  .button {
+    display: inline-block;
+    margin: 12px 0 8px;
+    padding: 14px 24px;
+    background: var(--text);
+    color: var(--bg);
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .small { color: var(--muted); font-size: 15px; }
+
+  .small a { color: var(--muted); }
+
+  ul { padding-left: 22px; margin: 0 0 16px; }
+
+  /* One heading per installation step, numbered by hand so it reads well when copied. */
+  h3 {
+    margin: 32px 0 10px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 18px;
+  }
+
+  .aside {
+    margin: 16px 0 0;
+    padding: 16px 18px 6px;
+    border-left: 3px solid var(--line);
+    background: #222327;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .aside h4 {
+    margin: 0 0 8px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+  }
+
+  .fine {
+    margin-top: 16px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  footer a { color: var(--muted); }
+
+  @media (max-width: 420px) {
+    main { padding-top: 40px; }
+    h1 { font-size: 28px; }
+    .lead { font-size: 18px; }
+    .button { display: block; text-align: center; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>InstaBlock</h1>
+
+  <p class="lead">InstaBlock est une application Android qui bloque pour vous plus de 600 comptes d'extrême droite sur Instagram.</p>
+
+  <p>Basée sur le mouvement <a href="https://www.onbloquelextremedroite.fr/">On bloque l’extrême droite</a>, elle recense les comptes de partis, d’élus, de médias, de militants et d’influenceurs d’extrême droite actifs sur Instagram. Ils proviennent de&nbsp;:</p>
+
+  <ul>
+    <li>la liste <a href="https://trace-archive.fr/onbloque">trace-archive.fr/onbloque</a>&nbsp;;</li>
+    <li>les comptes suggérés par <a href="https://www.onbloquelextremedroite.fr/">onbloquelextremedroite.fr</a> et son dépôt <a href="https://github.com/juliencoquet/onbloquelextremedroite">juliencoquet/onbloquelextremedroite</a>&nbsp;;</li>
+    <li>les comptes suivis par <a href="https://www.instagram.com/blockout_extremedroitefrance/">@blockout_extremedroitefrance</a>&nbsp;;</li>
+    <li>la liste <a href="https://github.com/Vaalgtir/blockout_ed">Vaalgtir/blockout_ed</a>&nbsp;;</li>
+    <li>les comptes Instagram des député·es RN et UDR, d’après les <a href="https://data.assemblee-nationale.fr/">données de l’Assemblée nationale</a>&nbsp;;</li>
+    <li>les comptes Instagram de membres et de partis d’extrême droite référencés sur <a href="https://www.wikidata.org/">Wikidata</a>.</li>
+  </ul>
+
+  <p>On veut les bloquer, mais ça prend un temps fou manuellement… Donc pourquoi ne pas automatiser ça&nbsp;? Vous le lancez, laissez votre téléphone tranquille une heure, et tout est fait.</p>
+
+  <p>L'application est gratuite et open source&nbsp;: son code est public, et n'importe qui peut vérifier ce qu'elle fait. Elle ne demande pas votre mot de passe et n'a pas accès à Internet.</p>
+
+  <!-- Always downloads the latest release, as long as its file is named InstaBlock.apk. -->
+  <a class="button" href="https://github.com/instablock/instablock_app/releases/latest/download/InstaBlock.apk">Télécharger l'application</a>
+  <p class="small">Android uniquement. Voir le <a href="#installation">guide d'installation</a> ci-dessous.</p>
+
+  <h2 id="installation">Installation</h2>
+
+  <p>Aucune connaissance technique n'est nécessaire, et tout se fait sur votre téléphone. Comptez cinq minutes.</p>
+
+  <h3>1. Désactiver Play Protect, le temps de l'installation</h3>
+  <p>InstaBlock n'est pas sur le Play Store&nbsp;: on l'installe à partir d'un fichier, ce que Google Play Protect bloque souvent.</p>
+  <ol>
+    <li>Ouvrez l'application <strong>Play Store</strong>.</li>
+    <li>Touchez votre <strong>photo de profil</strong>, en haut à droite.</li>
+    <li>Touchez <strong>Play Protect</strong>, puis la <strong>roue dentée</strong> en haut à droite.</li>
+    <li>Désactivez «&nbsp;Analyser les applis avec Play Protect&nbsp;» et confirmez.</li>
+  </ol>
+
+  <h3>2. Télécharger l'application</h3>
+  <p>Touchez le bouton «&nbsp;Télécharger l'application&nbsp;» en haut de cette page. Le fichier <strong>InstaBlock.apk</strong> se télécharge.</p>
+
+  <h3>3. Installer</h3>
+  <ol>
+    <li>Une fois le téléchargement terminé, touchez la notification, ou ouvrez le fichier depuis l'application <strong>Fichiers</strong>, dossier <strong>Téléchargements</strong>.</li>
+    <li>Si le téléphone indique que l'installation d'applis inconnues n'est pas autorisée depuis cette source, touchez <strong>Paramètres</strong>, activez «&nbsp;Autoriser cette source&nbsp;», puis revenez en arrière.</li>
+    <li>Touchez <strong>Installer</strong>.</li>
+  </ol>
+
+  <h3>4. Réactiver Play Protect</h3>
+  <p>Retournez dans le Play Store › photo de profil › Play Protect › roue dentée, et réactivez «&nbsp;Analyser les applis avec Play Protect&nbsp;».</p>
+
+  <h3>5. Activer le service d'accessibilité</h3>
+  <p>InstaBlock a besoin du service d'accessibilité pour lire l'écran d'Instagram et toucher les boutons à votre place. Tant qu'il est désactivé, la roue dentée en haut à droite de l'application clignote doucement.</p>
+  <ol>
+    <li>Ouvrez <strong>InstaBlock</strong> et touchez la <strong>roue dentée</strong> en haut à droite&nbsp;: les paramètres «&nbsp;Accessibilité&nbsp;» s'ouvrent.</li>
+    <li>Dans la section «&nbsp;Applications téléchargées&nbsp;», touchez «&nbsp;InstaBlock&nbsp;».</li>
+    <li>Activez «&nbsp;Utiliser InstaBlock&nbsp;».</li>
+    <li>Une fenêtre demande d'autoriser InstaBlock à contrôler l'appareil&nbsp;: touchez «&nbsp;Autoriser&nbsp;».</li>
+  </ol>
+  <p>C'est fait quand la roue dentée ne clignote plus et que le bandeau «&nbsp;service désactivé&nbsp;» a disparu.</p>
+
+  <div class="aside">
+    <h4>Si l'interrupteur est grisé</h4>
+    <p>Android bloque ce réglage pour les applications installées à partir d'un fichier. L'écran affiche «&nbsp;Contrôlé par les paramètres restreints&nbsp;», ou une fenêtre «&nbsp;Paramètre restreint&nbsp;» s'ouvre quand vous touchez l'interrupteur.</p>
+    <ol>
+      <li>Touchez l'interrupteur une fois, puis «&nbsp;OK&nbsp;» dans la fenêtre «&nbsp;Paramètre restreint&nbsp;». Cette tentative est nécessaire&nbsp;: l'option de l'étape 3 n'apparaît qu'après.</li>
+      <li>Ouvrez les Paramètres du téléphone › «&nbsp;Applications&nbsp;» › «&nbsp;Voir toutes les applis&nbsp;» › «&nbsp;InstaBlock&nbsp;».</li>
+      <li>Touchez le menu ⋮ en haut à droite, puis «&nbsp;Autoriser les paramètres restreints&nbsp;». Confirmez avec votre code, schéma ou empreinte.</li>
+      <li>Recommencez l'étape 5 depuis le début&nbsp;: l'interrupteur fonctionne maintenant.</li>
+    </ol>
+  </div>
+
+  <p class="small">Ce guide est aussi disponible dans l'application, en touchant le <strong>?</strong> en haut à droite.</p>
+
+  <h3>6. Lancer le blocage</h3>
+  <ol>
+    <li>Vérifiez que vous êtes connecté·e à votre compte dans l'application <strong>Instagram</strong>.</li>
+    <li>Branchez votre téléphone si possible, puis touchez <strong>Démarrer</strong> dans InstaBlock.</li>
+    <li>Ne touchez plus au téléphone&nbsp;: InstaBlock ouvre Instagram et bloque les comptes un par un. L'écran reste allumé pendant tout le blocage.</li>
+    <li>Pour arrêter, revenez dans InstaBlock et touchez <strong>Arrêter</strong>.</li>
+  </ol>
+  <p>Si le blocage est interrompu, il suffit de toucher Démarrer plus tard&nbsp;: InstaBlock reprend là où il s'était arrêté.</p>
+
+  <h2>Et mon compte Instagram&nbsp;?</h2>
+
+  <p>Il est entre de bonnes mains. InstaBlock n'est pas un bot qui se connecte à votre place&nbsp;: il ne demande pas votre mot de passe et passe par l'application Instagram de votre téléphone, en touchant les mêmes boutons que vous, au rythme d'une personne. Et bloquer des comptes est une action tout à fait normale sur Instagram.</p>
+
+  <p>Instagram limite simplement le nombre d'actions possibles en peu de temps. S'il affiche «&nbsp;Réessayez plus tard&nbsp;», InstaBlock s'arrête de lui-même avant d'insister. Attendez quelques heures, voire un jour, puis touchez Démarrer&nbsp;: l'application reprend là où elle en était. Bloquer toute la liste peut donc prendre plusieurs sessions.</p>
+
+  <p>Enfin, rien ne quitte votre téléphone&nbsp;: l'application n'a pas accès à Internet, elle ne peut rien envoyer, ni à nous ni à personne.</p>
+
+  <p class="lead">Reprenons le contrôle de l'espace médiatique, et freinons l'expansion de l'extrême droite et de leurs idées dangereuses&nbsp;!</p>
+
+  <footer>
+    <p><a href="https://github.com/instablock/instablock_app">Code source</a> · <a href="https://github.com/instablock/instablock_app/releases">Toutes les versions</a> · Licence <a href="https://github.com/instablock/instablock_app/blob/main/LICENSE">GPL v3.0</a></p>
+    <p class="fine">InstaBlock n'est affilié ni à Instagram ni à Meta. Automatiser des actions sur Instagram n'est pas prévu par ses conditions d'utilisation, et aucun risque ne peut être exclu complètement&nbsp;: vous utilisez InstaBlock sous votre propre responsabilité. Vous pouvez débloquer un compte à tout moment depuis Instagram.</p>
+  </footer>
+
+</main>
+</body>
+</html>
